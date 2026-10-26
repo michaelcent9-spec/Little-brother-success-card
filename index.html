@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080b14">
+<title>Operation: Success | Your Exam Mission</title>
+<style>
+:root{--bg:#080b14;--panel:#101827;--ink:#f4f6fb;--muted:#b8c1d4;--red:#c63c43;--gold:#f3bd5b;--line:rgba(255,255,255,.14)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+a{color:inherit}.wrap{width:min(1100px,92%);margin:auto}.nav{position:absolute;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:20px 4%;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase}.brand{font-weight:900}.brand span{color:var(--gold)}.nav a{text-decoration:none;color:#dbe2ef}
+.hero{min-height:100svh;display:grid;align-items:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 78% 25%,rgba(198,60,67,.24),transparent 32%),linear-gradient(115deg,#080b14 0%,#111b2a 55%,#25141a 100%)}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,11,20,.98) 0%,rgba(8,11,20,.78) 53%,rgba(8,11,20,.25) 100%),repeating-linear-gradient(115deg,transparent 0 70px,rgba(255,255,255,.025) 71px 73px);pointer-events:none}
+.hero-art{position:absolute;right:-4%;bottom:0;width:min(62%,760px);height:85%;opacity:.82;pointer-events:none}
+.hero-art svg{width:100%;height:100%}.hero-content{position:relative;z-index:1;padding:120px 0 90px;max-width:720px}
+.eyebrow{color:var(--gold);letter-spacing:.23em;text-transform:uppercase;font-size:.75rem;font-weight:800}.hero h1{font-size:clamp(3.2rem,10vw,7.5rem);line-height:.92;letter-spacing:-.065em;margin:22px 0}.hero h1 span{display:block;color:var(--red)}.hero p{max-width:550px;color:var(--muted);font-size:clamp(1rem,2vw,1.2rem)}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{border:1px solid var(--line);padding:13px 18px;border-radius:3px;text-decoration:none;font-weight:800;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;display:inline-flex;align-items:center;gap:9px}.btn.primary{background:var(--red);border-color:var(--red)}.btn:hover{transform:translateY(-2px);filter:brightness(1.1)}
+.scroll-note{position:absolute;bottom:22px;left:4%;color:#a5afc2;font-size:.72rem;letter-spacing:.15em;text-transform:uppercase}
+section{padding:92px 0}.section-kicker{color:var(--red);font-weight:900;font-size:.75rem;letter-spacing:.22em;text-transform:uppercase}.section-title{font-size:clamp(2.1rem,5vw,4rem);line-height:1.03;letter-spacing:-.04em;margin:10px 0 16px}.intro{max-width:650px;color:var(--muted)}
+.quote-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:32px}.quote-card{min-height:220px;padding:24px;background:linear-gradient(145deg,#141d2c,#0d121d);border:1px solid var(--line);position:relative;overflow:hidden}.quote-card:after{content:attr(data-number);position:absolute;right:12px;bottom:-35px;font-size:8rem;line-height:1;font-weight:950;color:rgba(255,255,255,.035)}.quote-card .mark{font-size:2rem;color:var(--gold)}.quote-card blockquote{font-size:1.22rem;font-weight:800;line-height:1.3;margin:10px 0 16px;position:relative;z-index:1}.quote-card p{font-size:.78rem;color:var(--muted);margin:0;position:relative;z-index:1}
+.divider{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}.mission-panel{padding:clamp(24px,5vw,48px);background:linear-gradient(140deg,#192337,#0d121c);border:1px solid var(--line);position:relative;overflow:hidden}.mission-panel:before{content:"⚔";position:absolute;right:-8px;top:-40px;font-size:13rem;color:rgba(243,189,91,.055)}.mission-panel h3{font-size:2rem;line-height:1.1;margin:12px 0}.mission-panel p{color:var(--muted)}.checklist{list-style:none;padding:0;margin:24px 0}.checklist li{padding:11px 0;border-bottom:1px solid var(--line);display:flex;gap:12px}.checklist li span{color:var(--gold);font-weight:900}
+.video-card{background:#0e1521;border:1px solid var(--line);padding:14px}.video-frame{position:relative;aspect-ratio:16/9;background:radial-gradient(circle at 50% 35%,rgba(243,189,91,.2),transparent 30%),linear-gradient(135deg,#351a20,#101827 60%,#080b14);display:grid;place-items:center;overflow:hidden}.video-frame:before,.video-frame:after{content:"";position:absolute;width:45%;height:140%;background:rgba(255,255,255,.04);transform:rotate(35deg)}.video-frame:before{left:8%}.video-frame:after{right:8%}.play{position:relative;z-index:1;width:74px;height:74px;border-radius:50%;background:var(--red);display:grid;place-items:center;font-size:1.6rem;box-shadow:0 0 0 12px rgba(198,60,67,.14)}.video-caption{padding:16px 4px 4px}.video-caption strong{display:block;font-size:1.15rem}.video-caption p{color:var(--muted);font-size:.9rem;margin:6px 0 12px}.small{font-size:.78rem;color:var(--muted)}
+.message{background:linear-gradient(120deg,#7f2029,#35171e 55%,#141a28);text-align:center;position:relative;overflow:hidden}.message .section-title{max-width:800px;margin:14px auto}.message p{max-width:700px;margin:18px auto;color:#f0dfe0;font-size:1.08rem}.signature{color:var(--gold);font-weight:900;letter-spacing:.1em;text-transform:uppercase;margin-top:28px}
+footer{padding:24px 0;color:#8792a8;font-size:.75rem}.footer-row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:760px){.hero-art{width:100%;height:54%;right:-22%;opacity:.45}.hero:before{background:linear-gradient(90deg,rgba(8,11,20,.96),rgba(8,11,20,.55))}.hero-content{padding-top:130px}.quote-grid,.two-col{grid-template-columns:1fr}.quote-card{min-height:175px}section{padding:68px 0}.nav .nav-link{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="brand">OPERATION <span>SUCCESS</span></div><a class="nav-link" href="#message">From your big brother ↓</a></header>
+<main>
+<section class="hero" id="top">
+  <div class="hero-art" aria-hidden="true">
+  <svg viewBox="0 0 700 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs><linearGradient id="cape" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c63c43"/><stop offset="1" stop-color="#551b27"/></linearGradient><linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e4eaf2"/><stop offset="1" stop-color="#69768a"/></linearGradient></defs>
+    <circle cx="450" cy="190" r="125" fill="#f3bd5b" fill-opacity=".08"/><circle cx="450" cy="190" r="90" stroke="#f3bd5b" stroke-opacity=".18"/>
+    <path d="M70 760L180 365L270 290L360 365L520 760Z" fill="#101827" stroke="#526077" stroke-opacity=".4" stroke-width="3"/>
+    <path d="M235 350L285 270L335 350L370 510L315 490L270 520L225 490Z" fill="#182235" stroke="#8b98ac" stroke-opacity=".6" stroke-width="3"/>
+    <path d="M265 280L285 225L310 280L302 330L276 330Z" fill="#d9dfe8" fill-opacity=".85"/>
+    <path d="M245 350L285 325L335 350L420 590L320 555L250 600L180 565Z" fill="url(#cape)" fill-opacity=".88"/>
+    <path d="M270 375L310 375L335 510L285 545L250 510Z" fill="#27354b" stroke="#d5dce6" stroke-opacity=".5" stroke-width="2"/>
+    <path d="M250 405L120 580L145 600L280 465Z" fill="#27354b" stroke="#a7b3c6" stroke-opacity=".65" stroke-width="3"/>
+    <path d="M125 582L65 700L88 710L151 602Z" fill="url(#steel)"/>
+    <path d="M320 415L430 550L412 570L300 460Z" fill="#27354b" stroke="#a7b3c6" stroke-opacity=".65" stroke-width="3"/>
+    <path d="M430 550L510 655L492 670L410 570Z" fill="url(#steel)"/>
+    <path d="M90 750L180 650M155 750L240 645M400 750L475 660M485 750L540 665" stroke="#8d9ab0" stroke-opacity=".24" stroke-width="3"/>
+    <path d="M0 640L700 520M0 690L700 570M0 740L700 620" stroke="#c63c43" stroke-opacity=".12" stroke-width="2"/>
+  </svg></div>
+  <div class="wrap hero-content">
+    <div class="eyebrow">A message for the exam warrior</div>
+    <h1>YOUR NEXT<br><span>CHAPTER</span><br>STARTS NOW.</h1>
+    <p>Every page you revise, every question you attempt, every time you get back up after a hard topic: it all counts. Your mission isn't to be perfect. It's to keep going.</p>
+    <div class="actions"><a class="btn primary" href="#mission">Enter your mission <span>↗</span></a><a class="btn" href="#quotes">Read your orders ↓</a></div>
+  </div>
+  <div class="scroll-note">Discipline • Courage • Keep moving</div>
+</section>
+<section id="quotes">
+ <div class="wrap reveal">
+  <div class="section-kicker">01 / Words to carry</div>
+  <h2 class="section-title">WHEN IT GETS HARD,<br>REMEMBER WHY YOU STARTED.</h2>
+  <p class="intro">Inspired by the grit of Attack on Titan. Exams can feel like a final boss, but even final bosses have patterns. Breathe, study, and take the next step.</p>
+  <div class="quote-grid">
+   <article class="quote-card" data-number="01"><div class="mark">✦</div><blockquote>“This world is cruel… but it is also beautiful.”</blockquote><p>ATTACK ON TITAN • MIKASA ACKERMAN</p></article>
+   <article class="quote-card" data-number="02"><div class="mark">✦</div><blockquote>Keep moving forward. One question at a time.</blockquote><p>YOUR EXAM MINDSET • INSPIRED BY AOT</p></article>
+   <article class="quote-card" data-number="03"><div class="mark">✦</div><blockquote>Fear can come along. It does not get to lead.</blockquote><p>YOUR MISSION • ORIGINAL MESSAGE</p></article>
+  </div>
+ </div>
+</section>
+<div class="divider"></div>
+<section id="mission">
+ <div class="wrap two-col reveal">
+  <div>
+   <div class="section-kicker">02 / Your mission briefing</div>
+   <h2 class="section-title">YOU DON'T NEED<br>TO FEEL READY.</h2>
+   <p class="intro">You just need to begin. Don't try to defeat the whole syllabus in one sitting. Win the next 25 minutes, then the next one.</p>
+   <ul class="checklist"><li><span>01</span> Read the question carefully.</li><li><span>02</span> Start with what you know.</li><li><span>03</span> If you get stuck, breathe and try another route.</li><li><span>04</span> Sleep, eat, hydrate. Your brain is not a machine with a spare battery.</li></ul>
+  </div>
+  <div class="mission-panel">
+   <div class="eyebrow">Field rule #1</div>
+   <h3>Consistency beats panic.</h3>
+   <p>You have worked to get here. Trust the preparation you have done, learn from the mistakes, and give each paper your best effort.</p>
+   <p><strong>Today's target:</strong> do the next useful thing, not every thing.</p>
+  </div>
+ </div>
+</section>
+<div class="divider"></div>
+<section id="flame">
+ <div class="wrap two-col reveal">
+  <div>
+   <div class="section-kicker">03 / The flame within</div>
+   <h2 class="section-title">SET YOUR HEART<br>ABLAZE.</h2>
+   <p class="intro">Rengoku's words are a reminder to give your best even when the road is tough. Let this be your pre-exam hype moment.</p>
+   <p class="small">The player below links to a legitimate streaming episode featuring the “Set Your Heart Ablaze” moment. Availability may depend on region and subscription.</p>
+   <a class="btn primary" href="https://www.crunchyroll.com/watch/G50UZ933E/set-your-heart-ablaze" target="_blank" rel="noopener">Watch the Rengoku moment ↗</a>
+  </div>
+  <div class="video-card">
+   <a href="https://www.crunchyroll.com/watch/G50UZ933E/set-your-heart-ablaze" target="_blank" rel="noopener" aria-label="Open Demon Slayer Set Your Heart Ablaze episode" style="text-decoration:none">
+    <div class="video-frame"><div class="play">▶</div></div>
+    <div class="video-caption"><strong>DEMON SLAYER: SET YOUR HEART ABLAZE</strong><p>“Set your heart ablaze. Overcome your limits.” — Kyojuro Rengoku</p><span class="small">Open official streaming page ↗</span></div>
+   </a>
+  </div>
+ </div>
+</section>
+<section class="message" id="message">
+ <div class="wrap reveal">
+  <div class="section-kicker" style="color:#ffd47d">A message from your big brother</div>
+  <h2 class="section-title">I'M ALREADY PROUD OF YOU.</h2>
+  <p>Whatever the results say, remember that one exam cannot measure your whole future. Prepare seriously, walk into that room with courage, and give it everything you've got. When it gets difficult, don't give up on yourself. You've got more in you than you think.</p>
+  <p>Go make yourself proud. I'll be cheering for you all the way.</p>
+  <div class="signature">Your big brother ❤️</div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap footer-row"><span>MADE WITH LOVE • OPERATION SUCCESS</span><span>Unofficial fan-made encouragement page. Anime titles and characters belong to their respective owners.</span></div></footer>
+<script>
+const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+ if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}
+}), {threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
